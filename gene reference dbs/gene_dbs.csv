@@ -1,0 +1,4 @@
+db,url,vers,date,archive
+CARD,https://card.mcmaster.ca/download,1.2.1,10/10/2017,card-data.tar.bz2
+ResFinder,https://bitbucket.org/genomicepidemiology/resfinder_db/downloads/,,,genomicepidemiology-resfinder_db-4c05e845504d.zip
+ARG-ANNOT,http://en.mediterranee-infection.com/arkotheque/client/ihumed/_depot_arko/articles/1424/arg-annot-nt-v3-march2017_doc.fasta,,,arg-annot-nt-v3-march2017_doc.fasta

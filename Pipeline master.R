@@ -10,7 +10,8 @@ biocLite('ShortRead')
 library(SRAdb)  #SRAdb library
 library(ShortRead)
 library(RSQLite)
-
+library(rBLAST)
+library(Biostrings)
 
 #INITIALIZE PROJECT CONSTANTS
 

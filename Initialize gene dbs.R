@@ -1,0 +1,1 @@
+gene_dbs <- read.csv(file.path(PROJ_DIR, 'gene reference dbs'))
