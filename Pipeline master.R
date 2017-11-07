@@ -7,6 +7,10 @@
 source("https://bioconductor.org/biocLite.R")
 biocLite('SRAdb')
 biocLite('ShortRead')
+
+library(devtools)
+install_github("mhahsler/rBLAST")
+
 library(SRAdb)  #SRAdb library
 library(ShortRead)
 library(RSQLite)
@@ -26,6 +30,13 @@ PROJ_DIR <- file.path(USER_HOME, PROJ_PATH)
 # Define local sequence repository
 LOCAL_WGS_REPOS <- 'D:/WGS_Repository'
 
+
+# Define location for reference gene DBs in LOCAL_WGS_REPOS
+REF_GENE_DB_DIR <- 'Gene_DBs'
+
+# Define reference gene DBs to blast sequences against
+REF_GENE_DB_SET <- c('ARG-ANNOT')
+
 #Find CSV data file with NARMS data
 ISOLATE_DATA_FILE <- 'Data/NARMSRetailMeats.csv'
 
@@ -37,7 +48,7 @@ SUBSET_CRITERIA <- "SEROTYPE == 'Typhimurium' & ACCESSION_NUMBER != ''"
 
 
 #INITIALIZE LOCAL SEQUENCE REPOSITORY
-source(file.path(PROJ_DIR,'Initialize Repository.R'))
+source(file = file.path(PROJ_DIR,'Initialize Repository.R'))
                                                   #Downloads and installs '
 
 
